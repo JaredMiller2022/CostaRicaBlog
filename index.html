@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CR Blog de Jared Miller</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="CSS/stylesheet.css" />
+  <link rel="stylesheet" href="CSS/w3.css" />
+  <link rel="stylesheet" href="CSS/gallerystyle.css" />
+  <link rel="shortcut icon" type="image/jpg" href="Images/CostaRicanFlagSquare.jpg" /> 
+</head>
+
+<body>
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar w3-card w3-animate-top w3-white" id="myNavbar">
+      <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleMobileNav()" title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a href="#home" style="color:red" class="w3-bar-item w3-button"> PÁGINA INICIAL </a>
+      <a href="#sobre" style="color:red" class="w3-bar-item w3-button w3-hide-small"> SOBRE </a>
+      <a href="#diarios" style="color:red" class="w3-bar-item w3-button w3-hide-small"> DIARIOS </a>
+      <a href="#fotos" style="color:red" class="w3-bar-item w3-button w3-hide-small"> FOTOS </a>
+      <a href="#signup" style="color:red" class="w3-bar-item w3-button w3-hide-small"> REGÍSTRATE </a>
+    </div>
+  </div>
+
+  <!-- Navbar on small screens -->
+<div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:38px">
+    <a href="#sobre" style="color:red" class="w3-bar-item w3-button" onclick="toggleMobileNav()"> SOBRE </a>
+    <a href="#diarios" style="color:red" class="w3-bar-item w3-button" onclick="toggleMobileNav()"> DIARIOS </a>
+    <a href="#fotos" style="color:red" class="w3-bar-item w3-button" onclick="toggleMobileNav()"> FOTOS </a>
+    <a href="#signup" style="color:red" class="w3-bar-item w3-button" onclick="toggleMobileNav()"> REGÍSTRATE </a>
+  </div>
+</div>
+
+<!--First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-large w3-wide w3-animate-opacity"><a style="color:red;padding-left:63px;padding-right:62px;">Costa Rica Blog</a></span>
+    <br>
+    <span class="w3-center w3-black w3-xxlarge w3-wide w3-animate-opacity"><a style="color:red;padding-left:25px;padding-right:25px;">de Jared Miller</a></span>
+  </div>
+</div>
+
+<!--make only one title page show up based on mobile or desktop-->
+<style>
+  @media screen and (min-width: 500px) {
+      .mobileHome {
+          display: none !important;
+      }
+  }
+  @media screen and (max-width: 500px) {
+      .desktopHome {
+          display: none !important;
+      }
+  }
+</style>
+
+<!-- Container (About Section) -->
+<div class="w3-center w3-content w3-container w3-padding-32" id="sobre">
+  <h2 style="color:red">SOBRE</h2>
+  <p>
+    Para la clase de Español 230 en la Universidad de Michigan, voy a estudiar en San José, Costa Rica. Estoy convirtiendo la clase a "honores" de haciendo este blog con diarios sobre mis experiencias.
+    <br><br>
+    Puedes contactarme a...
+  </p>
+  <!--contact info-->
+  <p>
+    <a style="text-decoration:none" href="mailto:jaredmil@umich.edu" target="_blank" rel="noopener" class="w3-hover-text-black"><i class="fa fa-envelope fa-fw w3-xlarge"></i> jaredmil@umich.edu</a>
+  </p>
+  <p>
+    <a style="text-decoration:none" target="_blank" rel="noopener" href="https://api.whatsapp.com/send?phone=16099156938&text=Hi%20Jared!" class="w3-hover-text-black"><img src="Images/WhatsAppWhite.png" style="width:40px" /> 609-915-6938</a>
+  </p>
+</div>
+
+<div class="whatsapp"></div>
+
+<!-- Container (Diarios Section) -->
+<div class="w3-content w3-container w3-padding-32" id="diarios">
+  <h2 class="w3-center" style="color:red">DIARIOS</h2>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a href="5-11-19.html">
+        <img src="Images/CostaRicanFlag.jpg" alt="Cinque Terre" width="600" height="400">
+      </a>
+      <div class="desc">¡Mi primer dia!<br>11 de Mayo</div>
+    </div>
+  </div>
+
+</div>
+
+  
+<!-- Container (Fotos Section) -->
+<div class="w3-content w3-container w3-padding-32" id="fotos">
+  <h2 class="w3-center" style="color:red">FOTOS</h2>
+  
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" rel="noopener" href="https://drive.google.com/drive/folders/1QNyY_SyDxe342LTmkairas3AFIYpBnMy?usp=sharing">
+        <img src="Images/placeholder.jpg" alt="Cinque Terre" width="600" height="400">
+      </a>
+      <div class="desc">Mi familia</div>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" rel="noopener" href="https://drive.google.com/drive/folders/1HnRRi-wlflUUlwBYF9J6hAIlOnaJM9sd?usp=sharing">
+        <img src="Images/placeholder.jpg" alt="Forest" width="600" height="400">
+      </a>
+      <div class="desc">Clase</div>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" rel="noopener" href="https://drive.google.com/drive/folders/1vVaK71XwYL9g_I_gTR8ST_PSvF2BMA5b?usp=sharing">
+        <img src="Images/placeholder.jpg" alt="Mi host familia" width="600" height="400">
+      </a>
+      <div class="desc">Cultura</div>
+    </div>
+  </div>
+  <!--
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" rel="noopener" href="img_mountains.jpg">
+        <img src="Images/placeholder.jpg" alt="Mountains" width="600" height="400">
+      </a>
+      <div class="desc">Excursión 1</div>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" rel="noopener" href="img_5terre.jpg">
+        <img src="Images/placeholder.jpg" alt="Cinque Terre" width="600" height="400">
+      </a>
+      <div class="desc">Excursión 2</div>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank"rel="noopener" href="img_forest.jpg">
+        <img src="Images/placeholder.jpg" alt="Forest" width="600" height="400">
+      </a>
+      <div class="desc">Excursión 3</div>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" rel="noopener" href="img_lights.jpg">
+        <img src="Images/placeholder.jpg" alt="Mi host familia" width="600" height="400">
+      </a>
+      <div class="desc">Excursión 4</div>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" rel="noopener" href="img_mountains.jpg">
+        <img src="Images/placeholder.jpg" alt="Mountains" width="600" height="400">
+      </a>
+      <div class="desc">Excursión 5</div>
+    </div>
+  </div>
+  -->
+</div>
+
+<!-- Sign Up Form -->
+<div class="w3-center w3-content w3-container w3-padding-32" id="signup">
+  <h2 class="w3-center" style="color:red">REGÍSTRATE</h2>
+  <p>Recomiendo que te registres a recibir notificaciones por correos electrónicos cuando yo publico diarios nuevos...</p>
+  <form id='foo' action="https://docs.google.com/forms/d/e/1FAIpQLSfo0S2dPh2EnOaAjJ_far_ObtaOciTLbnp_Swlr50M4j8TZ2Q/formResponse" target="_blank" method="POST">
+    <div id='first'>
+      <input class="w3-input" type="text" placeholder="nombre" required name="entry.284356261" id="First Name">
+      <input class="w3-input" type="email" placeholder="ejemplo@gmail.com" required name="entry.1238064532" id="Email">
+      <button class="w3-button w3-black w3-section" type="submit" onsubmit="submit()">
+        ENVIAR
+      </button>
+    </div>
+
+    <div id='success'></div>
+  </form>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src='google-sheet.js'></script>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-32 w3-opacity-min">
+  <div class="desktopHome"><a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>A la cima</a></div>
+  <div class="mobileHome"><a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>A la cima</a></div>
+  <p>Esto página web fue hacer por Jared.</p>
+</footer>
+
+<script>
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function toggleMobileNav() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else {
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+</script>
+</body>
+</html>
