@@ -30,7 +30,7 @@
       <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleMobileNav()" title="Toggle Navigation Menu">
         <i class="fa fa-bars"></i>
       </a>
-      <a href="#home" style="color:red" class="w3-bar-item w3-button"> PÁGINA INICIAL </a>
+      <a href="#home" style="color:red" class="w3-bar-item w3-button" onclick="toggleMobileNav2()"> PÁGINA INICIAL </a>
       <a href="#sobre" style="color:red" class="w3-bar-item w3-button w3-hide-small"> SOBRE </a>
       <a href="#diarios" style="color:red" class="w3-bar-item w3-button w3-hide-small"> DIARIOS </a>
       <a href="#fotos" style="color:red" class="w3-bar-item w3-button w3-hide-small"> FOTOS </a>
@@ -186,6 +186,14 @@
     var x = document.getElementById("navDemo");
     if (x.className.indexOf("w3-show") == -1) {
       x.className += " w3-show";
+    } else {
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+
+  function toggleMobileNav2() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
     } else {
       x.className = x.className.replace(" w3-show", "");
     }
