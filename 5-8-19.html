@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CR Blog de Jared Miller</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="CSS/stylesheet.css" />
+  <link rel="stylesheet" href="CSS/w3.css" />
+  <link rel="stylesheet" href="CSS/diario.css" />
+  <link rel="stylesheet" href="CSS/gallerystyle.css" />
+  <link rel="shortcut icon" type="image/jpg" href="Images/Home/CostaRicanFlagSquare.jpg" /> 
+</head>
+
+<body>
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar w3-card w3-animate-top w3-white" id="myNavbar">
+      <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleMobileNav()" title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a href="index.html#home" style="color:red" class="w3-bar-item w3-button"> PÁGINA INICIAL </a>
+      <a href="index.html#sobre" style="color:red" class="w3-bar-item w3-button w3-hide-small"> SOBRE </a>
+      <a href="index.html#diarios" style="color:red" class="w3-bar-item w3-button w3-hide-small"> DIARIOS </a>
+      <a href="index.html#fotos" style="color:red" class="w3-bar-item w3-button w3-hide-small"> FOTOS </a>
+      <a href="index.html#signup" style="color:red" class="w3-bar-item w3-button w3-hide-small"> REGÍSTRATE </a>
+    </div>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:38px">
+    <a href="index.html#sobre" style="color:red" class="w3-bar-item w3-button" onclick="toggleMobileNav()"> SOBRE </a>
+    <a href="index.html#diarios" style="color:red" class="w3-bar-item w3-button" onclick="toggleMobileNav()"> DIARIOS </a>
+    <a href="index.html#fotos" style="color:red" class="w3-bar-item w3-button" onclick="toggleMobileNav()"> FOTOS </a>
+    <a href="index.html#signup" style="color:red" class="w3-bar-item w3-button" onclick="toggleMobileNav()"> REGÍSTRATE </a>
+  </div>
+
+<!--make only one title page show up based on mobile or desktop-->
+<style>
+  @media screen and (min-width: 500px) {
+      .mobileHome {
+          display: none !important;
+      }
+  }
+  @media screen and (max-width: 500px) {
+      .desktopHome {
+          display: none !important;
+      }
+  }
+</style>
+
+<!-- Container (Diario Section) -->
+<div class="w3-content w3-container w3-padding-32" id="sobre">
+  <!--heading-->
+  <h2 class="w3-center" style="color:red;margin-bottom:0">¡Bienvenidos!</h2>
+  <p class="w3-center" style="color:black;padding-top:0;margin-top:0;">8/5/19<br>Por: Jared Miller</p>
+  <!--content-->
+
+  <div class="pic w200 fright">
+    <img src="Images/5-8-19/CostaRicaMap.jpg" alt="CostaRicaMap.jpg">
+    <div class="desc"><small>Voy a vivir en San José, la capitál de Costa Rica.</small></div>
+  </div>
+
+  <p>
+    ¡Hola amigos!
+  </p>
+  <p>
+    Me llamo Jared Miller y soy un estudiante a la Universidad de Michigan. Allí, soy estudiendo sciencia computación en la programa honores. Pero, adicionalamente a computación, me gustan clases de español. Este último semestre, yo tomé la clase de Español 103, cual es 101 y 102 combinados. Este sabado, voy a vuelar a San José, Costa Rica para la clase de Español 230. Este clase es un programa intensivo y enseña 231 y 232 en seis semanas.
+  </p>
+  <p>
+    Los lunes, mi clase y yo vamos a tener salidas a diferentes lugares. Por ejemplo, volcanes, parques, playas y bosques tropicales. De martes a viernes, tenemos clases de 8 a 12, y algunos días de 1:30 a 4 además. La clase esta a la facilidad de ICADs, pero con un profesor de Michigan.
+  </p>
+  <p>
+    Voy a vivir con un familia que no habla ingles, asi que necesito hablar en español todos los tiempos. Estoy muy emojionado para el viaje y a conocer mi familia.
+  </p>
+  <p>
+    Quiero escribir uno o dos diarios nuevos cada semana. Pero, no sé sí voy a tener wifi a publicar ellos en la red. Así, los voy a publicar cuando puedo.
+  </p>
+  <p>
+    Pura vida,<br>
+    Jared
+  </p>
+
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16 w3-opacity-min">
+  <p style="color:white">Esto página web fue hacer por Jared.</p>
+</footer>
+
+<script>
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function toggleMobileNav() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else {
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+</script>
+</body>
+</html>

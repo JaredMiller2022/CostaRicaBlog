@@ -1,10 +1,15 @@
 div.gallery {
   border: 2px solid #ccc;
+  text-decoration: none;
 }
 
 div.gallery:hover {
   border: 2px solid #101010;
   color: #101010;
+}
+
+div.diariolink {
+  text-decoration: none;
 }
 
 div.gallery img {
