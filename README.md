@@ -8,4 +8,5 @@ As a part of the Honors Program at Michigan, I will be maintaining this blog (co
 honors credit for the course.
 
 Pura Vida,
+
 Jared
