@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139845990-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-139845990-1');
+  </script>
+  <!-- Actual Header -->
+  <title>CR Blog de Jared Miller</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="CSS/stylesheet.css" />
+  <link rel="stylesheet" href="CSS/w3.css" />
+  <link rel="stylesheet" href="CSS/diario.css" />
+  <link rel="stylesheet" href="CSS/gallerystyle.css" />
+  <link rel="shortcut icon" type="image/jpg" href="Images/Home/CostaRicanFlagSquare.jpg" /> 
+</head>
+
+<body>
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar w3-card w3-animate-top w3-white" id="myNavbar">
+      <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleMobileNav()" title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a href="index.html#home" style="color:red" class="w3-bar-item w3-button"> PÁGINA INICIAL </a>
+      <a href="index.html#sobre" style="color:red" class="w3-bar-item w3-button w3-hide-small"> SOBRE </a>
+      <a href="index.html#diarios" style="color:red" class="w3-bar-item w3-button w3-hide-small"> DIARIOS </a>
+      <a href="index.html#fotos" style="color:red" class="w3-bar-item w3-button w3-hide-small"> FOTOS </a>
+      <a href="index.html#signup" style="color:red" class="w3-bar-item w3-button w3-hide-small"> REGÍSTRATE </a>
+    </div>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:38px">
+    <a href="index.html#sobre" style="color:red" class="w3-bar-item w3-button" onclick="toggleMobileNav()"> SOBRE </a>
+    <a href="index.html#diarios" style="color:red" class="w3-bar-item w3-button" onclick="toggleMobileNav()"> DIARIOS </a>
+    <a href="index.html#fotos" style="color:red" class="w3-bar-item w3-button" onclick="toggleMobileNav()"> FOTOS </a>
+    <a href="index.html#signup" style="color:red" class="w3-bar-item w3-button" onclick="toggleMobileNav()"> REGÍSTRATE </a>
+  </div>
+
+<!--make only one title page show up based on mobile or desktop-->
+<style>
+  @media screen and (min-width: 500px) {
+      .mobileHome {
+          display: none !important;
+      }
+  }
+  @media screen and (max-width: 500px) {
+      .desktopHome {
+          display: none !important;
+      }
+  }
+</style>
+
+<!-- Container (Diario Section) -->
+<div class="w3-content w3-container w3-padding-32" id="sobre">
+
+  <div class="pic w300 fright" style="margin-top:20px">
+    <img src="Images/5-13-19/TicoTimes.jpg" alt="TicoTimes.jpg">
+    <div class="desc"><small>Este es un publicación sobre el terremoto.</small></div>
+  </div>
+
+  <!--heading-->
+  <h2 class="w3-center" style="color:red;margin-bottom:0">El Terremoto</h2>
+  <p class="w3-center" style="color:black;padding-top:0;margin-top:0;">-- 8/13/19 --<br>Por: Jared Miller</p>
+  <!--content-->
+
+  <p>
+    Ayer tuve una experiencia muy interesante.
+  </p>
+  <p>
+    Eran cerca de 1:14 de la tarde y estaba en mi cama antes de tomar una siesta. Puse mi teléfono en mi mesita de noche y cerré mis ojos.
+  </p>
+  <p>
+    Unos minutos más tarde, mis ojos se abrieron y sentí que mi cama se balanceaba de un lado a otro.
+  </p>
+  <p>
+    Yo miré debajo de mi cama a ver sí mi perro, Izzy, lo estaba balancear. Pero ella no estuvó allí. Así, me olvidé de eso y duermé.
+  </p>
+    Pero, esta mañana, mi amigo me envió este foto y supe que soy un sobreviviente del terremoto que fue 6.4 en magnitud.
+  <p>
+    Pura vida,<br>
+    Jared
+  </p>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16 w3-opacity-min">
+  <p style="color:white">Esto página web fue hacer por Jared.</p>
+</footer>
+
+<script>
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function toggleMobileNav() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else {
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+</script>
+</body>
+</html>
