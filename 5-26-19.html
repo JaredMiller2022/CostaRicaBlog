@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139845990-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-139845990-1');
+  </script>
+  <!-- Actual Header -->
+  <title>CR Blog de Jared Miller</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="CSS/stylesheet.css" />
+  <link rel="stylesheet" href="CSS/w3.css" />
+  <link rel="stylesheet" href="CSS/diario.css" />
+  <link rel="stylesheet" href="CSS/gallerystyle.css" />
+  <link rel="shortcut icon" type="image/jpg" href="Images/Home/CostaRicanFlagSquare.jpg" /> 
+</head>
+
+<body>
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar w3-card w3-animate-top w3-white" id="myNavbar">
+      <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleMobileNav()" title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a href="index.html#home" style="color:red" class="w3-bar-item w3-button"> PÁGINA INICIAL </a>
+      <a href="index.html#sobre" style="color:red" class="w3-bar-item w3-button w3-hide-small"> SOBRE </a>
+      <a href="index.html#diarios" style="color:red" class="w3-bar-item w3-button w3-hide-small"> DIARIOS </a>
+      <a href="index.html#fotos" style="color:red" class="w3-bar-item w3-button w3-hide-small"> FOTOS </a>
+      <a href="index.html#signup" style="color:red" class="w3-bar-item w3-button w3-hide-small"> REGÍSTRATE </a>
+    </div>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:38px">
+    <a href="index.html#sobre" style="color:red" class="w3-bar-item w3-button" onclick="toggleMobileNav()"> SOBRE </a>
+    <a href="index.html#diarios" style="color:red" class="w3-bar-item w3-button" onclick="toggleMobileNav()"> DIARIOS </a>
+    <a href="index.html#fotos" style="color:red" class="w3-bar-item w3-button" onclick="toggleMobileNav()"> FOTOS </a>
+    <a href="index.html#signup" style="color:red" class="w3-bar-item w3-button" onclick="toggleMobileNav()"> REGÍSTRATE </a>
+  </div>
+
+<!--make only one title page show up based on mobile or desktop-->
+<style>
+  @media screen and (min-width: 500px) {
+      .mobileHome {
+          display: none !important;
+      }
+  }
+  @media screen and (max-width: 500px) {
+      .desktopHome {
+          display: none !important;
+      }
+  }
+</style>
+
+<!-- Container (Diario Section) -->
+<div class="w3-content w3-container w3-padding-32" id="sobre">
+  <!--heading-->
+  <h2 class="w3-center" style="color:red;margin-bottom:0">Jacó!</h2>
+  <p class="w3-center" style="color:black;padding-top:0;margin-top:0;">-- 26/5/19 --<br>Por: Jared Miller</p>
+  <!--content-->
+  <div class="pic w200 fleft">
+    <img src="Images/5-26-19/Snake.JPG" alt="Snake.jpg">
+    <div class="desc"><small>Esta es la serpiente que nuestro conductor señaló como "muy mortal".</small></div>
+  </div>
+
+  <p>
+    Este fin de semana, la mayor parte de la clase fue a la ciudad de Jacó. Mientras no era la ciudad más hermosa, nos divertimos mucho.
+  </p>
+
+  <p>
+    Después de la clase el viernes, fuimos a la estación de autobuses y tomamos un autobús desde San José hasta el centro de Jaco. Esa noche, fuimos a algunos bares y un casino después de que estudiamos las estadísticas de 21 (la versión de Blackjack aquí).
+  </p>
+
+  <div class="pic w200 fright">
+    <img src="Images/5-26-19/Waterfall.JPG" alt="Waterfall.jpg">
+    <div class="desc"><small>Este es la catarata de Bijagual.</small></div>
+  </div>
+
+  <p>
+    Al día siguiente, John, Adam y yo también tuvimos lecciones de surf y aprendimos a surfear bien sin necesidad de ayuda. Estaba lloviendo y el océano tenía muchos chirivías, así que fue muy interesante. Ahora, estamos seguros de que podemos alquilar tablas de surf y navegar el próximo fin de semana.
+  </p>
+  <p>
+    Hoy (domingo) hicimos una excursión a una cascada. En el camino había una montaña increíblemente empinada y, a mitad de camino, nuestro conductor disminuyó la velocidad para que pudiéramos mirar a una serpiente y decir: "¡esa cosa puede matarte en minutos!" que era muy reconfortante justo antes de una caminata en el bosque.
+  </p>
+
+  <div class="pic w200 fleft">
+    <img src="Images/5-26-19/Surf.JPG" alt="Surf.jpg">
+    <div class="desc"><small>Los tres gringos con sus tablas de surf.</small></div>
+  </div>
+
+  <p>
+    Pensé que iba a ser de 2 kilómetros, pero cuando llegué allí, me di cuenta de que estaba a 2 kilómetros de la cascada y 2 kilómetros de regreso a la cima. Pero valió la pena porque era hermoso y nadamos en el agua de la cascada fue muy divertido.
+  </p>
+
+  <p>
+    Nos quedaremos en Jacó otra noche y nos reuniremos con la clase mañana antes de nuestro recorrido por el parque nacional Carara, que está cerca de Jacó.
+  </p>
+  <p>
+    Pura vida,<br>
+    Jared
+  </p>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16 w3-opacity-min">
+  <p style="color:white">Esto página web fue hacer por Jared.</p>
+</footer>
+
+<script>
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function toggleMobileNav() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else {
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+</script>
+</body>
+</html>
