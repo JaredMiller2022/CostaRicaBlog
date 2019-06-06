@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139845990-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-139845990-1');
+  </script>
+  <!-- Actual Header -->
+  <title>CR Blog de Jared Miller</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="CSS/stylesheet.css" />
+  <link rel="stylesheet" href="CSS/w3.css" />
+  <link rel="stylesheet" href="CSS/diario.css" />
+  <link rel="stylesheet" href="CSS/gallerystyle.css" />
+  <link rel="shortcut icon" type="image/jpg" href="Images/Home/CostaRicanFlagSquare.jpg" /> 
+</head>
+
+<body>
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar w3-card w3-animate-top w3-white" id="myNavbar">
+      <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleMobileNav()" title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a href="index.html#home" style="color:red" class="w3-bar-item w3-button"> PÁGINA INICIAL </a>
+      <a href="index.html#sobre" style="color:red" class="w3-bar-item w3-button w3-hide-small"> SOBRE </a>
+      <a href="index.html#diarios" style="color:red" class="w3-bar-item w3-button w3-hide-small"> DIARIOS </a>
+      <a href="index.html#fotos" style="color:red" class="w3-bar-item w3-button w3-hide-small"> FOTOS </a>
+      <a href="index.html#signup" style="color:red" class="w3-bar-item w3-button w3-hide-small"> REGÍSTRATE </a>
+    </div>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:38px">
+    <a href="index.html#sobre" style="color:red" class="w3-bar-item w3-button" onclick="toggleMobileNav()"> SOBRE </a>
+    <a href="index.html#diarios" style="color:red" class="w3-bar-item w3-button" onclick="toggleMobileNav()"> DIARIOS </a>
+    <a href="index.html#fotos" style="color:red" class="w3-bar-item w3-button" onclick="toggleMobileNav()"> FOTOS </a>
+    <a href="index.html#signup" style="color:red" class="w3-bar-item w3-button" onclick="toggleMobileNav()"> REGÍSTRATE </a>
+  </div>
+
+<!--make only one title page show up based on mobile or desktop-->
+<style>
+  @media screen and (min-width: 500px) {
+      .mobileHome {
+          display: none !important;
+      }
+  }
+  @media screen and (max-width: 500px) {
+      .desktopHome {
+          display: none !important;
+      }
+  }
+</style>
+
+<!-- Container (Diario Section) -->
+<div class="w3-content w3-container w3-padding-32" id="sobre">
+  <!--heading-->
+  <h2 class="w3-center" style="color:red;margin-bottom:0">Montezuma!</h2>
+  <p class="w3-center" style="color:black;padding-top:0;margin-top:0;">-- 33/5/19 --<br>Por: Jared Miller</p>
+  <!--content-->
+  <div class="pic w300 fleft">
+    <img src="Images/5-33-19/FerrySunset.JPG" alt="Sunset.jpg">
+    <div class="desc"><small>Este fue el atardecer del ferry.</small></div>
+  </div>
+
+  <p>
+    Este fin de semana, Adam, John y yo fuimos a Montezuma. Salimos a 2 en la tarde despues la clase en viernes. Fue 3 horas a la costa oeste y entonces tomamos un ferry a la Nicoya penisula y cuando llegamos, fue un corto viaje en autobús y llegamos a Hotel Montezuma cerca de 7:30 en la noche.
+  </p>
+  <p>
+    El sábado, llegamos a las 5 de la mañana y miramos el amanecer. Despues, tomamos un gran desayuno a un cena pequeña en la playa. Tuve panqueques y un batido de chocolate con plátano y miel.
+  </p>
+
+  <div class="pic w200 fright">
+    <img src="Images/5-33-19/SurfPath.JPG" alt="SurfPath.jpg">
+    <div class="desc"><small>Esta fue la caminata a la jungla donde estaban las tablas de surf y los monos.</small></div>
+  </div>
+
+  <p>
+    Alquilamos vehículos todo terreno para el día y recorrimos toda la parte sur de la península, desde Playa Montezuma a Playa Cedros, Cabuya, Playa Mal País, Playa Santa Taresa, Playa Cocal, Playa Hermosa, Playa Manzanillo y volver a Montezuma. Las pequeñas ciudades de surf eran muy frescas y las olas eran enormes. En el trayecto de pueblo en pueblo, las vistas de las montañas y el campo eran hermosas.
+  </p>
+  <p>
+    Encontramos un buen restaurante donde comimos un lindo cena mientras veíamos la película "Making A Star", antes de que nos acostemos temprano.
+  </p>
+
+  <div class="pic w200 fleft">
+    <img src="Images/5-33-19/Surfboard.jpg" alt="Surfboard.jpg">
+    <div class="desc"><small>Esta fue la tabla de surf "pequeño" usamos.</small></div>
+  </div>
+
+  <p>
+    Hoy, nos levantamos temprano para poder surfear todo el día. El hotel Montezuma estaba a solo 25 minutos a pie de Playa Grande, donde alquilamos dos tablas de surf y rotamos quién estaba en el océano para que no nos cansáramos. La playa tiene una milla de largo y no tenía nada, excepto algunas hamacas instaladas en las palmeras y una tonelada de cangrejos corriendo por la arena. Las olas eran más grandes que las de Jacó, pero perfectas para probar tablas de surf más pequeñas porque cuanto más pequeñas son las tablas de surf y más grandes son las olas, más rápido vas.
+  </p>
+
+  <p>
+    Cuando devolvimos las tablas de surf, las trajimos a esta choza en medio del bosque. El paseo allí era hermoso, con hierba verde y palmeras con enredaderas que colgaban de todas partes. Cuando estábamos en la cabaña, empezamos a escuchar aullidos de todos los que nos rodeaban y cuando salimos, vimos una docena de enormes monos saltando en los árboles que se encontraban sobre nosotros. Fue una experiencia loca, pero nos asustamos y volvimos corriendo a la playa.
+  </p>
+
+  <p>
+    After we returned to Hotel Montezuma and showered, we ate lunch with other students from many other schools who were studying in Costa Rica. The return trip took a long time, but we could see the sunset on the ferry, which was very beautiful.
+  </p>
+
+  <p>
+    Pura vida,<br>
+    Jared
+  </p>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16 w3-opacity-min">
+  <p style="color:white">Esto página web fue hacer por Jared.</p>
+</footer>
+
+<script>
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function toggleMobileNav() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else {
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+</script>
+</body>
+</html>
