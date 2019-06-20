@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139845990-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-139845990-1');
+  </script>
+  <!-- Actual Header -->
+  <title>CR Blog de Jared Miller</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="CSS/stylesheet.css" />
+  <link rel="stylesheet" href="CSS/w3.css" />
+  <link rel="stylesheet" href="CSS/diario.css" />
+  <link rel="stylesheet" href="CSS/gallerystyle.css" />
+  <link rel="shortcut icon" type="image/jpg" href="Images/Home/CostaRicanFlagSquare.jpg" /> 
+</head>
+
+<body>
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar w3-card w3-animate-top w3-white" id="myNavbar">
+      <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleMobileNav()" title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a href="index.html#home" style="color:red" class="w3-bar-item w3-button"> PÁGINA INICIAL </a>
+      <a href="index.html#sobre" style="color:red" class="w3-bar-item w3-button w3-hide-small"> SOBRE </a>
+      <a href="index.html#diarios" style="color:red" class="w3-bar-item w3-button w3-hide-small"> DIARIOS </a>
+      <a href="index.html#fotos" style="color:red" class="w3-bar-item w3-button w3-hide-small"> FOTOS </a>
+      <a href="index.html#signup" style="color:red" class="w3-bar-item w3-button w3-hide-small"> REGÍSTRATE </a>
+    </div>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:38px">
+    <a href="index.html#sobre" style="color:red" class="w3-bar-item w3-button" onclick="toggleMobileNav()"> SOBRE </a>
+    <a href="index.html#diarios" style="color:red" class="w3-bar-item w3-button" onclick="toggleMobileNav()"> DIARIOS </a>
+    <a href="index.html#fotos" style="color:red" class="w3-bar-item w3-button" onclick="toggleMobileNav()"> FOTOS </a>
+    <a href="index.html#signup" style="color:red" class="w3-bar-item w3-button" onclick="toggleMobileNav()"> REGÍSTRATE </a>
+  </div>
+
+<!--make only one title page show up based on mobile or desktop-->
+<style>
+  @media screen and (min-width: 500px) {
+      .mobileHome {
+          display: none !important;
+      }
+  }
+  @media screen and (max-width: 500px) {
+      .desktopHome {
+          display: none !important;
+      }
+  }
+</style>
+
+<!-- Container (Diario Section) -->
+<div class="w3-content w3-container w3-padding-32" id="sobre">
+  <!--heading-->
+  <h2 class="w3-center" style="color:red;margin-bottom:0">Fútbol</h2>
+  <p class="w3-center" style="color:black;padding-top:0;margin-top:0;">-- 17/6/19 --<br>Por: Jared Miller</p>
+  <!--content-->
+
+  <div class="pic w200 fright">
+    <img src="Images/6-17-19/Estadio.JPG" alt="Estadio.jpg">
+    <div class="desc"><small>Este es el Estadio Nacional.</small></div>
+  </div>
+
+  <p>
+    El sábado por la mañana, John y yo tomamos un autobús a Jaco. Cuando llegamos, almorzamos en un bar americano y comimos el mejor sándwich de pollo y una limonada que realmente necesitaba.
+  </p>
+
+  <p>
+    Después de una siesta en nuestro albergue de $ 11 / noche, hicimos surf por 3 horas. Las olas eran más grandes que nuestra última vez en Jacó y usé una tabla de surf más pequeña, que fue mucho más difícil.
+  </p>
+
+  <div class="pic w200 fleft">
+    <img src="Images/6-17-19/LosTresAmigos.JPG" alt="LosTresAmigos.jpg">
+    <div class="desc"><small>Nosotros somos "Los Tres Amigos" (y el hermano anfitrión de John).</small></div>
+  </div>
+  
+  <p>
+    Ayer (sábado) por la mañana, llegamos a San José y fuimos al estadio nacional a recoger nuestras entradas. Más tarde, Adam, John y yo fuimos a un bar cerca del estadio nacional y, después de sentarnos, un grupo de 10 personas con cámaras se sentaron en la mesa junto a nosotros. Bromeé sobre decirles dónde nos sentaremos, para que nuestros padres nos vean y uno de los hombres me escuchó y nos se presentó como el director de ESPN Latinoamérica. Ellos fueron el equipo que cubría los partidos y lo fue muy genial.
+  </p>
+  
+  <p>
+    El primer juego, Bermuda vs. Haití, fue interesante, pero no había muchos fanáticos en las gradas. Cuando comenzó el segundo juego, las gradas se llenaron muy rápidamente con fanáticos de Costa Rica y Nicaragua. Antes del primer gol, el estadio era más ruidoso que todas mis otras experiencias combinadas en estadios.
+  </p>
+
+  <p>
+    Al final, Costa Rica ganó 4-0 y los costarricenses estaban locos y los nicaragüenses estaban tristes. Lo fue una experiencía invaluable y demasiado me divirtió.
+  </p>
+
+  <p>
+    Pura vida,<br>
+    Jared
+  </p>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16 w3-opacity-min">
+  <p style="color:white">Esto página web fue hacer por Jared.</p>
+</footer>
+
+<script>
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function toggleMobileNav() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else {
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+</script>
+</body>
+</html>
